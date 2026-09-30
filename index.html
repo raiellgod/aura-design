@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Studio Aura | Interiores de Alto Padrão em São Paulo</title>
+    <meta
+      name="description"
+      content="Studio Aura cria arquitetura e interiores autorais para residências de alto padrão em São Paulo."
+    />
+    <meta property="og:title" content="Studio Aura | Interiores de Alto Padrão" />
+    <meta
+      property="og:description"
+      content="Arquitetura e interiores autorais para residências de alto padrão em São Paulo."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#121414" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="src/js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#hero" aria-label="Studio Aura">
+        <span>Studio</span>
+        <span>Aura</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        data-menu-toggle
+      >
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__label">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#processo">Processo</a>
+        <a href="#fundadora">Fundadora</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="header-cta" href="#contato">Agendar consulta</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <video
+          class="hero__video"
+          data-video
+          data-video-sources="src/assets/interior-dark-video.mp4,assets/interior-dark-video.mp4,interior-dark-video.mp4,stitch_studio_aura_luxury_landing_page/interior-dark-video.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-hidden="true"
+        ></video>
+        
+
+        <div class="hero__content reveal">
+          <p class="eyebrow">Interior Design de Alto Padrão</p>
+          <h1 id="hero-title">Interiores que traduzem presença.</h1>
+          <p class="hero__copy">
+            Arquitetura e interiores autorais para residências de alto padrão em São Paulo.
+          </p>
+          <div class="hero__actions" aria-label="Ações principais">
+            <a class="button button--primary" href="#contato">Agendar consulta</a>
+            <a class="button button--secondary" href="#portfolio">Ver portfólio</a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="build-sequence"
+        id="processo"
+        aria-labelledby="build-sequence-title"
+        data-build-sequence
+      >
+        <div class="build-sequence__pin" data-build-pin>
+          <video
+            class="build-sequence__video"
+            data-video
+            data-build-video
+            data-video-sources="assets_/video-camadas.mp4,src/assets/video-camadas.mp4,assets/video-camadas.mp4,video-camadas.mp4,stitch_studio_aura_luxury_landing_page/video-camadas.mp4"
+            muted
+            playsinline
+            preload="auto"
+            aria-label="Sequência de camadas do projeto em vídeo controlada pelo scroll"
+          ></video>
+
+          <div class="build-sequence__content">
+            <article class="build-step build-step--left" data-build-card>
+              <p class="build-step__kicker">Conceito</p>
+              <h2 id="build-sequence-title">A intenção ganha forma.</h2>
+              <p>
+                Escuta, rotina e referências se transformam em uma direção estética precisa.
+              </p>
+            </article>
+
+            <article class="build-step build-step--right" data-build-card>
+              <p class="build-step__kicker">Desenho</p>
+              <h3>Matéria, luz e proporção.</h3>
+              <p>
+                Layout, materiais e iluminação são ajustados como camadas de uma mesma composição.
+              </p>
+            </article>
+
+            <article class="build-step build-step--left" data-build-card>
+              <p class="build-step__kicker">Entrega</p>
+              <h3>A obra preserva a visão.</h3>
+              <p>
+                Fornecedores, acabamentos e ajustes finais seguem a mesma disciplina do conceito.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="section__inner">
+          <div class="portfolio__header reveal">
+            <h2 id="portfolio-title">Projetos selecionados</h2>
+            <p>
+              Uma curadoria de residências onde arquitetura, mobiliário e arte trabalham em
+              silêncio.
+            </p>
+          </div>
+
+          <div class="portfolio-grid" data-gallery>
+            <article class="project project--tall reveal">
+              <a href="#contato" aria-label="Consultar sobre projeto Residência Jardins">
+                <figure>
+                  <img
+                    alt="Sala de estar de alto padrão com iluminação baixa e materiais naturais"
+                    data-fallback="https://picsum.photos/seed/studio-aura-jardins/900/1200"
+                    data-srcs="src/assets/interior-01.jpg,src/assets/interior-01.webp,src/assets/interior-1.jpg,src/assets/portfolio-01.jpg,src/assets/portfolio-1.jpg,src/assets/project-01.jpg,assets/interior-01.jpg,assets/interior-01.webp,assets/interior-1.jpg,assets/portfolio-01.jpg,assets/portfolio-1.jpg,assets/project-01.jpg,interior-01.jpg,portfolio-01.jpg"
+                  />
+                  <figcaption>
+                    <span>Residência Jardins</span>
+                    <span>São Paulo</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+
+            <article class="project reveal">
+              <a href="#contato" aria-label="Consultar sobre projeto Penthouse Itaim">
+                <figure>
+                  <img
+                    alt="Cozinha sofisticada com ilha de pedra e marcenaria escura"
+                    data-fallback="https://picsum.photos/seed/studio-aura-itaim/1000/800"
+                    data-srcs="src/assets/interior-02.jpg,src/assets/interior-02.webp,src/assets/interior-2.jpg,src/assets/portfolio-02.jpg,src/assets/portfolio-2.jpg,src/assets/project-02.jpg,assets/interior-02.jpg,assets/interior-02.webp,assets/interior-2.jpg,assets/portfolio-02.jpg,assets/portfolio-2.jpg,assets/project-02.jpg,interior-02.jpg,portfolio-02.jpg"
+                  />
+                  <figcaption>
+                    <span>Penthouse Itaim</span>
+                    <span>São Paulo</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+
+            <article class="project project--wide reveal">
+              <a href="#contato" aria-label="Consultar sobre projeto Apartamento Leblon">
+                <figure>
+                  <img
+                    alt="Suíte contemporânea com madeira, linho e iluminação indireta"
+                    data-fallback="https://picsum.photos/seed/studio-aura-leblon/1200/760"
+                    data-srcs="src/assets/interior-03.jpg,src/assets/interior-03.webp,src/assets/interior-3.jpg,src/assets/portfolio-03.jpg,src/assets/portfolio-3.jpg,src/assets/project-03.jpg,assets/interior-03.jpg,assets/interior-03.webp,assets/interior-3.jpg,assets/portfolio-03.jpg,assets/portfolio-3.jpg,assets/project-03.jpg,interior-03.jpg,portfolio-03.jpg"
+                  />
+                  <figcaption>
+                    <span>Apartamento Leblon</span>
+                    <span>Rio de Janeiro</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+
+            <article class="project reveal">
+              <a href="#contato" aria-label="Consultar sobre projeto Loft Vila Nova">
+                <figure>
+                  <img
+                    alt="Living com lareira de mármore, poltrona clara e piso escuro"
+                    data-fallback="https://picsum.photos/seed/studio-aura-vila-nova/900/1000"
+                    data-srcs="src/assets/interior-04.jpg,src/assets/interior-04.webp,src/assets/interior-4.jpg,src/assets/portfolio-04.jpg,src/assets/portfolio-4.jpg,src/assets/project-04.jpg,assets/interior-04.jpg,assets/interior-04.webp,assets/interior-4.jpg,assets/portfolio-04.jpg,assets/portfolio-4.jpg,assets/project-04.jpg,interior-04.jpg,portfolio-04.jpg"
+                  />
+                  <figcaption>
+                    <span>Loft Vila Nova</span>
+                    <span>São Paulo</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+
+            <article class="project project--tall reveal">
+              <a href="#contato" aria-label="Consultar sobre projeto Casa Boa Vista">
+                <figure>
+                  <img
+                    alt="Ambiente integrado com pedra natural, madeira e luz de fim de tarde"
+                    data-fallback="https://picsum.photos/seed/studio-aura-boa-vista/880/1180"
+                    data-srcs="src/assets/interior-05.jpg,src/assets/interior-05.webp,src/assets/interior-5.jpg,src/assets/portfolio-05.jpg,src/assets/portfolio-5.jpg,src/assets/project-05.jpg,assets/interior-05.jpg,assets/interior-05.webp,assets/interior-5.jpg,assets/portfolio-05.jpg,assets/portfolio-5.jpg,assets/project-05.jpg,interior-05.jpg,portfolio-05.jpg"
+                  />
+                  <figcaption>
+                    <span>Casa Boa Vista</span>
+                    <span>Campos do Jordão</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+
+            <article class="project reveal">
+              <a href="#contato" aria-label="Consultar sobre projeto Cobertura Higienópolis">
+                <figure>
+                  <img
+                    alt="Sala de jantar com mesa escultural, obras de arte e luz quente"
+                    data-fallback="https://picsum.photos/seed/studio-aura-higienopolis/1000/860"
+                    data-srcs="src/assets/interior-06.jpg,src/assets/interior-06.webp,src/assets/interior-6.jpg,src/assets/portfolio-06.jpg,src/assets/portfolio-6.jpg,src/assets/project-06.jpg,assets/interior-06.jpg,assets/interior-06.webp,assets/interior-6.jpg,assets/portfolio-06.jpg,assets/portfolio-6.jpg,assets/project-06.jpg,interior-06.jpg,portfolio-06.jpg"
+                  />
+                  <figcaption>
+                    <span>Cobertura Higienópolis</span>
+                    <span>São Paulo</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+
+            <article class="project project--wide reveal">
+              <a href="#contato" aria-label="Consultar sobre projeto Refúgio Serra">
+                <figure>
+                  <img
+                    alt="Quarto sereno com tecidos naturais, madeira e vista para a serra"
+                    data-fallback="https://picsum.photos/seed/studio-aura-serra/1200/760"
+                    data-srcs="src/assets/interior-07.jpg,src/assets/interior-07.webp,src/assets/interior-7.jpg,src/assets/portfolio-07.jpg,src/assets/portfolio-7.jpg,src/assets/project-07.jpg,assets/interior-07.jpg,assets/interior-07.webp,assets/interior-7.jpg,assets/portfolio-07.jpg,assets/portfolio-7.jpg,assets/project-07.jpg,interior-07.jpg,portfolio-07.jpg"
+                  />
+                  <figcaption>
+                    <span>Refúgio Serra</span>
+                    <span>Interior de São Paulo</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="founder section" id="fundadora" aria-labelledby="founder-title">
+        <div class="section__inner founder__grid">
+          <figure class="founder__portrait reveal">
+            <img
+              alt="Retrato profissional de Marina Vasconcelos"
+              data-fallback="https://picsum.photos/seed/marina-vasconcelos-portrait/900/1100"
+              data-srcs="src/assets/marina-vasconcelos.jpg,src/assets/marina.jpg,src/assets/fundadora.jpg,assets/marina-vasconcelos.jpg,assets/marina.jpg,assets/fundadora.jpg,marina-vasconcelos.jpg,fundadora.jpg"
+            />
+          </figure>
+          <div class="founder__content reveal">
+            <h2 id="founder-title">Marina Vasconcelos</h2>
+            <p>
+              Arquiteta e fundadora do Studio Aura, Marina conduz projetos residenciais para quem
+              busca sofisticação sem excesso. Sua assinatura está na leitura precisa do morador,
+              no domínio dos materiais e na disciplina de executar apenas o necessário.
+            </p>
+            <p>
+              O resultado são interiores com presença silenciosa: espaços que acolhem, valorizam
+              a rotina e mantêm relevância muito além da primeira impressão.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section" aria-labelledby="testimonials-title">
+        <div class="section__inner">
+          <div class="testimonials__header reveal">
+            <h2 id="testimonials-title">Depoimentos</h2>
+          </div>
+
+          <div class="testimonial-list">
+            <figure class="testimonial reveal">
+              <blockquote>
+                "O Studio Aura transformou nosso apartamento em um espaço preciso, elegante e
+                profundamente nosso."
+              </blockquote>
+              <figcaption>Helena Duarte, Jardins</figcaption>
+            </figure>
+            <figure class="testimonial reveal">
+              <blockquote>
+                "Marina conduziu cada decisão com calma e rigor. A obra terminou com a mesma
+                intenção do primeiro encontro."
+              </blockquote>
+              <figcaption>Ricardo Nasser, Itaim Bibi</figcaption>
+            </figure>
+            <figure class="testimonial reveal">
+              <blockquote>
+                "A casa ficou sofisticada sem perder conforto. Tudo parece natural, mas cada detalhe
+                foi pensado."
+              </blockquote>
+              <figcaption>Laura Meirelles, Alto de Pinheiros</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contato" aria-labelledby="contact-title">
+        <div class="section__inner contact__grid">
+          <div class="contact__content reveal">
+            <h2 id="contact-title">Vamos desenhar seu próximo espaço?</h2>
+            <p>
+              Conte sobre o imóvel, o momento da obra e o que precisa mudar. Retornamos com os
+              próximos passos para uma conversa inicial.
+            </p>
+            <address>
+              <a href="mailto:contato@studioaura.com.br">contato@studioaura.com.br</a>
+              <span>Alameda Gabriel Monteiro da Silva, São Paulo</span>
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">
+                WhatsApp Studio Aura
+              </a>
+            </address>
+          </div>
+
+          <form class="contact-form reveal" novalidate data-contact-form>
+            <div class="form-row">
+              <label for="name">Nome completo</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+              <small>Informe como prefere ser chamado.</small>
+              <p class="field-error" data-error-for="name"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <small>Usaremos este contato apenas para responder sua solicitação.</small>
+              <p class="field-error" data-error-for="email"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Telefone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+              <small>Opcional, mas ajuda no agendamento.</small>
+              <p class="field-error" data-error-for="phone"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="project">Tipo de projeto</label>
+              <select id="project" name="project" required>
+                <option value="">Selecione uma opção</option>
+                <option value="residencial">Residencial completo</option>
+                <option value="reforma">Reforma de alto padrão</option>
+                <option value="consultoria">Consultoria boutique</option>
+                <option value="corporativo">Corporativo ou comercial</option>
+              </select>
+              <small>Ajuda a direcionar a primeira conversa.</small>
+              <p class="field-error" data-error-for="project"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <small>Inclua bairro, metragem aproximada e prazo desejado, se souber.</small>
+              <p class="field-error" data-error-for="message"></p>
+            </div>
+
+            <button class="button button--primary form-submit" type="submit">
+              Enviar mensagem
+            </button>
+            <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__brand">
+        <span>Studio Aura</span>
+        <p>Arquitetura e interiores de alto padrão.</p>
+      </div>
+      <nav class="footer__links" aria-label="Redes sociais">
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer">Pinterest</a>
+      </nav>
+      <p class="footer__legal">&copy; 2026 Studio Aura. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
